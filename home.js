@@ -35,3 +35,28 @@ let truth = false; // boolean
 let groceries = ['apple', 'banana', 'oranges']; // array
 let random; // undefined
 let nothing = null; 
+
+// Arrays
+let fruits = ['banana', 'apple', 'orange', 'pineapples'];
+fruits = new Array('banana', 'apple', 'orange', 'pineapples');
+
+console.log(fruits[0]);
+fruits[1] = 'pear';
+
+for (let i = 0 ; i < fruits.length ; i++) {
+    console.log(fruits[i]);
+}
+
+// Array methods
+console.log(fruits.toString());
+console.log(fruits.join('-'));
+console.log(fruits, fruits.pop(), fruits); // pops and returns the last item of the array
+console.log(fruits.push('kiwi')); // it adds kiwi to the last of the array
+console.log(fruits[fruits.length] = 'haha');  
+fruits.shift(); //remove first element from the array
+fruits.unshift('lala'); // this will add first element in array
+let vegis = ['tomato', 'ginger', 'garlic'];
+let all = fruits.concat(vegis);
+console.log(all);
+console.log(all.slice(1,4));
+all.reverse;
